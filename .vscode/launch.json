@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "g++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/vagon",
+            "cwd": "${workspaceFolder}",
+            "args": ["15", "16", "10", "1.5", "60"],
+            "args_test": ["1.5", "16", "10", "1.5137", "60.243"],
+            "MIMode": "gdb",
+            "environment": [],
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+        }
+        ]
+}
